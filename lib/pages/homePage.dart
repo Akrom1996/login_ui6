@@ -32,13 +32,15 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                "Find the best parties near you",
-                style: TextStyle(
-                    color: Colors.yellow,
-                    fontSize: 32,
-                    fontWeight: FontWeight.w600),
-              ),
+              FadeAnimation(
+                  delay: 1.2,
+                  child: Text(
+                    "Find the best parties near you",
+                    style: TextStyle(
+                        color: Colors.yellow,
+                        fontSize: 32,
+                        fontWeight: FontWeight.w600),
+                  )),
               SizedBox(
                 height: 30,
               ),
